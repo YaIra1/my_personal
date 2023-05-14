@@ -57,7 +57,9 @@
             <h1>The best products start with Figma</h1>
             <p>Most calendars are designed for teams. Slate is designed for freelancers </p>
         </div>
-        <button type="button">Try For Free</button>
+               
+        <button type="button" class="btn btn-primary">Try For Free</button>
+      
     </header>
     <main>
         <section>
@@ -81,10 +83,16 @@
         <section>
             <h2>Fastest way to organize</h2>
             <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
-            <button type="button">Try For Free</button>
+            <button type="button" class="btn btn-primary">Try For Free</button>
             <img src="img/macbook.png" alt="macbook im">
-            <input type="email" placeholder="Your Email">
-            <button type="button">Subscribe</button>
+            <div class="container">
+              <form>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="Enter Email" aria-label="Enter your email address" aria-describedby="button-addon2">
+                  <button class="btn btn-primary" type="submit" id="button-addon2">Subscribe</button>
+                </div>
+              </form>
+            </div>
         </section>
         <section>
             <h3>All your fingertips</h3>
@@ -96,14 +104,14 @@
             <h2>Partners</h2>
             <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
             <img src="img/partners.png" alt="partners im">
-            <button type="button">Try For Free</button>
+            <button type="button" class="btn btn-primary">Try For Free</button>
         </section>
         <section>
             <h2>Testimonials</h2>
             <img src="img/ibm.png" alt="ibm im">
             <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
             <img src="img/testimonialcl.png" alt="photo of designer">
-            <button type="button"> More Testimonials</button>
+            <button type="button" class="btn btn-primary">More Testimonials</button>
         </section>
         <section>
             <h2>Pricing</h2>
@@ -112,17 +120,30 @@
         <footer>
             <h2>Contact Us</h2>
             <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
-            <form>
-                <form class="footer__form">
-                    <input type="text" placeholder="Your Name" name="name">
-                    <input type="email" placeholder="Your Email" name="email">
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <button type="submit">Send</button>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11779.977439735898!2d19.23393841465698!3d42.427854938983295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134deb1a30bbe391%3A0xa4eae08edf86b7f!2zWmFiamVsbywg0J_QvtC00LPQvtGA0LjRhtCwLCDQp9C10YDQvdC-0LPQvtGA0LjRjw!5e0!3m2!1sru!2scz!4v1683491408397!5m2!1sru!2scz"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </form>
+            
+                <div class="container">
+                  <h2>Contact us</h2>
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label"></label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"></label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label"></label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>                  
+                  </form>
+                  <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11779.977439735898!2d19.23393841465698!3d42.427854938983295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134deb1a30bbe391%3A0xa4eae08edf86b7f!2zWmFiamVsbywg0J_QvtC00LPQvtGA0LjRhtCwLCDQp9C10YDQvdC-0LPQvtGA0LjRjw!5e0!3m2!1sru!2scz!4v1683491408397!5m2!1sru!2scz"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>                
+                
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
